@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Break - Premium Coffee Shop</title>
+    <!-- Link to Google Fonts for professional typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR SECTION ================= -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> Coffee Break
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="btn-signin">login</a>
+                <a href="sign up.html" class="btn-signup">sign up</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Discover the Ultimate Taste of</span>
+                <h1 class="hero-title">Coffee</h1>
+                <p class="hero-desc">
+                    Our carefully crafted coffee is designed to give you the energy and focus you need to conquer your productivity. Say goodbye to sluggish mornings and hello to a sharper, more alert you.
+                </p>
+                <a href="#menu" class="btn-primary">Explore Now</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Delicious Cup of Coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="About Our Coffee Shop">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>
+                        Coffee break is an online coffee store that takes the modern consumer to specialty coffee from around the world. We source the finest Arabica beans straight to your cup. Every sip tells a story of meticulous brewing, artisan roasting, and a passion for perfection. Join us on our journey of flavor exploration.
+                    </p>
+                    <a href="#menu" class="btn-text">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WHY CHOOSE US SECTION -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why are we different?</h2>
+                <p>We don't just make coffee, we make your day!</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=150&q=80" alt="Premium Beans">
+                    </div>
+                    <h3>Supreme Beans</h3>
+                    <p>Sourced from the greatest global fields.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=150&q=80" alt="High Quality">
+                    </div>
+                    <h3>High Quality</h3>
+                    <p>We provide the highest brewing quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=150&q=80" alt="Extraordinary Taste">
+                    </div>
+                    <h3>Extraordinary</h3>
+                    <p>Coffee like you have never tasted.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1507133750043-4a8f6beae2f7?auto=format&fit=crop&w=150&q=80" alt="Affordable Price">
+                    </div>
+                    <h3>Affordable Price</h3>
+                    <p>Best coffee prices that are easy to afford.</p>
+                </div>
+            </div>
+            <div class="why-us-footer text-center">
+                <p>Grab your cup of morning coffee & jumpstart your day that feels started today.</p>
+                <a href="#menu" class="btn-outline">Join Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COFFEE MENU SECTION-->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Delight In a new mix of the Coffee World</h2>
+                <p>Explore all the flavours of our delicious coffee from our exclusive menu.</p>
+            </div>
+            
+            <!-- Menu Filtering Buttons -->
+            <div class="menu-filters text-center">
+                <button class="filter-btn active" data-filter="all">All Coffees</button>
+                <button class="filter-btn" data-filter="hot">Hot Coffee</button>
+                <button class="filter-btn" data-filter="cold">Cold Coffee</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Card 1 -->
+                <div class="menu-card" data-category="hot">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=400&q=80" alt="Espresso">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Espresso</h3>
+                        <p>Espresso is a full-bodied, concentrated form of coffee served in shots. Made by forcing hot water under pressure.</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$500</span>
+                            <button class="btn-order" data-name="Espresso" data-price="$500">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Card 2 -->
+                <div class="menu-card" data-category="hot">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&q=80" alt="Mocha">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Mocha</h3>
+                        <p>A chocolate-flavoured warm variant of a caffè latte. Crafted with rich espresso, steamed milk, and sweet chocolate syrup.</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$400</span>
+                            <button class="btn-order" data-name="Mocha" data-price="400">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Card 3 -->
+                <div class="menu-card" data-category="hot">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=400&q=80" alt="Latte">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Latte</h3>
+                        <p>Coffee drink made with espresso and steamed milk. Features delicate microfoam art on top for a smooth texture.</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$380</span>
+                            <button class="btn-order" data-name="Latte" data-price="380">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Card 4 -->
+                <div class="menu-card" data-category="cold">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=400&q=80" alt="Cold Brew">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Cold Brew</h3>
+                        <p>Steeped in cold water for 12 hours, resulting in a smooth, low-acid, refreshing coffee experience served over ice.</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$450</span>
+                            <button class="btn-order" data-name="Cold Brew" data-price="450">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SPECIAL OFFER SECTION ================= -->
+    <section class="offer">
+        <div class="container offer-container">
+            <div class="offer-content">
+                <span class="offer-tag">Offer</span>
+                <h2>Up to 20% OFF</h2>
+                <p>At Our Cafe, We Care For Your Health & Pleasure. Taste The Best Coffee Around The World Carefully Crafted Artisan Coffee Beans With Their Aroma & Flavor Blooming To Provide The Ultimate Roasting Taste.</p>
+                <a href="#menu" class="btn-primary">Shop Now</a>
+            </div>
+            <div class="offer-image">
+                <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=600&q=80" alt="Coffee Bean Packs">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS SECTION ================= -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Customer Review</h2>
+            </div>
+            
+            <div class="slider-container">
+                <button class="slider-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                
+                <div class="slider-track-wrapper">
+                    <div class="slider-track">
+                        <!-- Review 1 -->
+                        <div class="review-card active">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="reviewer-img">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah J.">
+                            </div>
+                            <h4>Sarah J.</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>"An absolute absolute game changer for my mornings! The espresso blend is smooth, rich, and gives me the exact focus I need."</p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="reviewer-img">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Michael R.">
+                            </div>
+                            <h4>Michael R.</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p>"The cold brew is out of this world! Perfect packaging and exceptionally fast shipping. Will definitely order again."</p>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="reviewer-img">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Emily K.">
+                            </div>
+                            <h4>Emily K.</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>"Incredible customer service and amazing aromatic beans. My kitchen smells like a high-end Italian café every morning!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <footer id="contact" class="footer">
+        <!-- Coffee bean pattern background banner overlay -->
+        <div class="footer-overlay"></div>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-mug-hot"></i> Coffee Break
+                </a>
+                <p>
+                    Coffee break is an online coffee store that takes the modern consumer to specialty coffee from around the world. Taste the finest Arabica beans straight to your cup.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Contact Us</h3>
+                <p>Subscribe to our newsletter for latest updates and special offers.</p>
+                <form id="contact-form" class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                    <span id="form-message" class="form-message"></span>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Coffee Break. All Rights Reserved. Student Project.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" class="scroll-top-btn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
